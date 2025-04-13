@@ -1,0 +1,36 @@
+/* Define custom properties for SearchBar */
+:root {
+    --brand-dark: #f87d00;     /* Border color updated */
+    --brand-light: #ffffff;    /* Background color updated */
+    --text-secondary: #777777;
+    --focus-color: #f87d00;     /* Focus ring color updated */
+  }
+  
+  /* Container styling */
+  .search-bar-container {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  
+  /* Input field styling */
+  .search-bar-input {
+    width: 100%;
+    padding: 0.5rem 1rem;       /* Same as Tailwind's px-4 py-2 */
+    border: 1px solid var(--brand-dark);
+    background-color: var(--brand-light);
+    border-radius: 4px;         /* Mimics rounded-md */
+    font-size: 0.875rem;        /* Mimics text-sm */
+    outline: none;
+  }
+  
+  /* Placeholder color */
+  .search-bar-input::placeholder {
+    color: var(--text-secondary);
+  }
+  
+  /* Focus state with a box-shadow to mimic focus:ring */
+  .search-bar-input:focus {
+    box-shadow: 0 0 0 2px var(--focus-color);
+  }
+  

@@ -1,0 +1,27 @@
+/* FullSearch container styling with responsiveness */
+.full-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 15px;
+  }
+  
+  /* Default: full width */
+  .full-search-item {
+    width: 100%;
+  }
+  
+  /* Small screens (min-width: 640px): 40% width */
+  @media (min-width: 640px) {
+    .full-search-item {
+      width: 40%;
+    }
+  }
+  
+  /* Large screens (min-width: 1024px): 25% width */
+  @media (min-width: 1024px) {
+    .full-search-item {
+      width: 25%;
+    }
+  }
+  

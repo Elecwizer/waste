@@ -1,0 +1,99 @@
+/* Define custom properties for FilterDropdown */
+:root {
+  --brand-dark: #f87d00;    /* Border and checked background color updated */
+  --brand-light: #ffffff;   /* Background color updated */
+  --text-main: #000000;
+}
+
+/* Container */
+.filter-dropdown {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* Filter Button */
+.filter-dropdown-button {
+  border: 1px solid var(--brand-dark);
+  background-color: var(--brand-light);
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;  /* Rounded corners */
+  padding: 0.5rem 1rem; /* Vertical: 0.5rem; Horizontal: 1rem */
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+}
+
+.filter-dropdown-button:focus {
+  outline: none;
+}
+
+/* Dropdown indicator */
+.dropdown-indicator {
+  margin-left: 0.5rem;
+}
+
+/* Dropdown Menu */
+.filter-dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem); /* Position dropdown 0.5rem below the button */
+  width: 100%;
+  border: 1px solid var(--brand-dark);
+  background-color: var(--brand-light);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Menu Items container */
+.menu-items {
+  padding: 0.25rem 0;
+}
+
+/* Each Menu Item */
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+/* Custom checkbox styling */
+.menu-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--brand-dark);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  background-color: #ffffff; /* default white background */
+  margin-right: 0.5rem;
+}
+
+/* Checked state: background becomes #f87d00 and display a white checkmark */
+.menu-checkbox:checked {
+  background-color: var(--brand-dark);
+  border: 1px solid var(--brand-dark);
+}
+
+.menu-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 0.3rem;
+  top: 0.0rem;
+  width: 0.25rem;
+  height: 0.5rem;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
