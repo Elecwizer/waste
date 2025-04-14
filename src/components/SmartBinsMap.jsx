@@ -38,7 +38,7 @@ const SmartBinsMap = () => {
 
         <div style={{ '--x': '87', '--y': '58' }} className="map-city">
           <div className="map-city__label">
-            <span data-icon="🎢" className="map-city__sign">FSmart bin 5</span>
+            <span data-icon="🎢" className="map-city__sign">Smart bin 5</span>
           </div>
         </div>
 
@@ -51,6 +51,24 @@ const SmartBinsMap = () => {
         <div style={{ '--x': '44', '--y': '45' }} className="map-city">
           <div className="map-city__label">
             <span data-icon="🦠" className="map-city__sign anim anim-slidein">Smart bin 7</span>
+          </div>
+        </div>
+
+        <div style={{ '--x': '73', '--y': '27' }} className="map-city">
+          <div className="map-city__label">
+            <span data-icon="✈️" className="map-city__sign anim anim-slidein">Smart bin 8</span>
+          </div>
+        </div>
+
+        <div style={{ '--x': '21', '--y': '51' }} className="map-city">
+          <div className="map-city__label">
+            <span data-icon="🏫" className="map-city__sign anim anim-grow">Smart bin 9</span>
+          </div>
+        </div>
+
+        <div style={{ '--x': '49', '--y': '68' }} className="map-city">
+          <div className="map-city__label">
+            <span data-icon="🗻" className="map-city__sign anim anim-grow">Smart bin 10</span>
           </div>
         </div>
 

@@ -16,14 +16,14 @@
 /* Container */
 .map-container {
     border-radius: 0.5em;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border: 1px solid #f87d00;  /* Replaced box-shadow with a colored border */
     line-height: 1;
     min-width: 15rem;
     position: relative;
     width: 50%;
     max-width: 1000px;   /* Limit maximum width */
     aspect-ratio: 1;     /* Keeps the container square */
-    margin: 0 auto;      /* Centers the container horizontally on the screen */
+    margin: 15px auto;   /* 15px margin on all sides and horizontally centered */
 }
 
 /* Map - Background */
